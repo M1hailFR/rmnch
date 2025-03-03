@@ -1,0 +1,35 @@
+{
+  "name": "nuxt3-vuetify3-starter",
+  "private": false,
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.x"
+  },
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "reset": "rm -rf .nuxt node_modules .output package-lock.json && npm install",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@vite-pwa/nuxt": "^0.10.6",
+    "sass": "^1.83.1",
+    "vuetify": "^3.7.6",
+    "typescript": "^5.6.3",
+    "vite-plugin-vuetify": "^2.0.4"
+  },
+  "dependencies": {
+    "@nuxt/image": "1.8.1",
+    "@pinia/nuxt": "^0.9.0",
+    "inputmask": "^5.0.9",
+    "moment": "^2.30.1",
+    "nuxt": "^3.13.2",
+    "pinia": "^2.3.1",
+    "vue": "latest",
+    "vue-router": "latest",
+    "vite-plugin-vuetify": "^2.0.4",    
+    "vue-i18n": "^11.1.0"
+  }
+}
