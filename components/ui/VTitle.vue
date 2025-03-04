@@ -12,7 +12,7 @@ interface ITitleProps {
 
 const props = withDefaults(defineProps<ITitleProps>(), {
   tag: 'h2',
-  defaultClass: 'text-center text-title3 text-sm-title2 text-md-title1 text-neutrals-5',
+  defaultClass: 'text-center text-title3 text-sm-title2 text-md-title1 ',
   additionalClass: ''
 });
 

@@ -9,6 +9,7 @@ import VSidebar from './VSidebar.vue'
 // import VCustomChip from './VCustomChip.vue'
 import VVerticalPadding from './VVerticalPadding.vue'
 import VBorderGrid from './VBorderGrid.vue'
+import VCollapse from './VCollapse.vue'
 import VTitle from './VTitle.vue'
 import VImage from './VImage.vue'
 
@@ -25,6 +26,7 @@ export {
   // VCustomChip,
   VVerticalPadding,
   VBorderGrid,
+  VCollapse,
   VTitle,
   VImage
 

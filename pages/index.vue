@@ -15,25 +15,23 @@
     </VVerticalPadding>
 
     <VVerticalPadding
-      :desktop-padding="MAIN_SERVICES_CONFIG.desktopPadding"
-      :mobile-padding="MAIN_SERVICES_CONFIG.mobilePadding"
+      :desktop-padding="MAIN_CARD_OUR_SERVICES_BLOCK.desktopPadding"
+      :mobile-padding="MAIN_CARD_OUR_SERVICES_BLOCK.mobilePadding"
     >
-      <BlockBannerDefault :fields="MAIN_SERVICES_CONFIG.block_fields" />
+      <BlockCardOurServices :fields="MAIN_CARD_OUR_SERVICES_BLOCK.block_fields" />
     </VVerticalPadding>
   </div>
 </template>
 
 <script setup lang="ts">
-import { BlockBannerDefault } from '~/components/blocks'
+import { BlockBannerDefault, BlockCardOurProducts, BlockCardOurServices } from '~/components/blocks'
 
 import { VVerticalPadding } from '~/components/ui'
-import { MAIN_BANNER_CONFIG, MAIN_INFO_CONFIG, MAIN_SERVICES_CONFIG } from '~/configs/pages/index'
+import { MAIN_BANNER_CONFIG, MAIN_INFO_CONFIG, MAIN_CARD_OUR_SERVICES_BLOCK } from '~/configs/pages/index'
 
 defineOptions({
   name: 'PageMain',
 })
-
-const { t } = useTranslation()
 </script>
 
 <style scoped>

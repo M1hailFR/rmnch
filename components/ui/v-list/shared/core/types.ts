@@ -1,6 +1,18 @@
-import { type IconPropType } from '~/core/types/components';
+import { type IconPropType } from '~/core/types/components'
 
 export interface IListItem {
-  icon?: IconPropType;
-  text: string;
+  icon?: IconPropType
+  title?: string
+  text?: string
+  duration?: string
+  price?: number
+}
+
+export interface IListService {
+  title?: string
+  text?: string
+  list?: IListItem[]
+  stages?: IListItem[]
+  duration?: string
+  price?: string
 }

@@ -1,16 +1,8 @@
 <template>
   <section class="banner">
     <v-container>
-      <div
-        class="banner--title"
-        :class="!fields.logo ? '' : 'd-grid'"
-      >
-        <NuxtImg
-          v-if="fields.logo"
-          
-          :src="fields.logo"
-          class="banner--logo"
-        />
+      <div class="banner--title" :class="!fields.logo ? '' : 'd-grid'">
+        <NuxtImg v-if="fields.logo" :src="fields.logo" class="banner--logo" />
 
         <v-title
           v-if="fields.title"
@@ -18,14 +10,9 @@
           :additional-class="!isSingle ? `text-md-left ${fields.titleTextSize}` : ''"
           class="d-flex flex-column"
         />
-        
       </div>
 
-      <v-image
-        v-if="fields.image"
-        class=""
-        :href="fields.image"
-      />
+      <v-image v-if="fields.image" class="" :href="fields.image" />
 
       <div
         v-if="fields.subtitle"
@@ -37,59 +24,6 @@
           fields.subscribeType,
         ]"
       />
-
-      <!-- <div class="banner--left d-flex flex-column justify-center" :class="{ 'align-center': isSingle }">
-        <div class="banner--left--inner">
-          <v-title v-if="fields.title" :title="fields.title" :additional-class="!isSingle ? 'text-md-left' : ''" />
-
-          <div
-            v-if="fields.subtitle"
-            v-html="fields.subtitle"
-            class="mt-5 mt-md-4 text-center text-neutrals-4 text-body-1"
-            :class="!isSingle ? 'text-md-left' : ''"
-          />
-
-          <div v-if="fields.buttonText" class="d-none d-md-block" :class="isSingle ? 'd-md-flex justify-center' : ''">
-            <v-button size="large" min-width="285" class="mt-8 banner--button">
-              {{ fields.buttonText }}
-            </v-button>
-          </div>
-        </div>
-      </div> -->
-      <!-- <div
-        class="banner--wrapper"
-        :class="{ 'banner--wrapper-single': isSingle, 'banner--wrapper-with-cards': fields.cards }"
-      >
-        <div class="banner--left d-flex flex-column justify-center" :class="{ 'align-center': isSingle }">
-          <div class="banner--left--inner">
-            <v-title v-if="fields.title" :title="fields.title" :additional-class="!isSingle ? 'text-md-left' : ''" />
-            <div
-              v-if="fields.subtitle"
-              v-html="fields.subtitle"
-              class="mt-5 mt-md-4 text-center text-neutrals-4 text-body-1"
-              :class="!isSingle ? 'text-md-left' : ''"
-            />
-            <div v-if="fields.buttonText" class="d-none d-md-block" :class="isSingle ? 'd-md-flex justify-center' : ''">
-              <v-button size="large" min-width="285" class="mt-8 banner--button">
-                {{ fields.buttonText }}
-              </v-button>
-            </div>
-          </div>
-        </div>
-        <div v-if="fields.image" class="banner--right">
-          <v-img :src="fields.image" />
-        </div>
-        <div v-else-if="fields.cards" class="banner--cards">
-          <VBorderGrid cols="2">
-            <CardWithLogo v-for="(card, idx) in fields.cards" :key="idx" v-bind="{ ...card, size: fields.size }" />
-          </VBorderGrid>
-        </div>
-        <div v-if="fields.buttonText" class="banner--bottom-button d-flex justify-center d-md-none">
-          <v-button size="large" :block="xs" :min-width="!xs ? 285 : undefined" class="mt-4 banner--button">
-            {{ fields.buttonText }}
-          </v-button>
-        </div>
-      </div> -->
     </v-container>
   </section>
 </template>
