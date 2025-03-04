@@ -1,8 +1,8 @@
 import vuetify, { transformAssetUrls } from "vite-plugin-vuetify";
 
 // PWA Config
-const title = "Vuetify 3 + Nuxt 3 Starter";
-const shortTitle = "Vuetify 3 + Nuxt 3 Starter";
+const title = "Rmnch styling";
+const shortTitle = "Development of unique websites";
 const description = "Template to get you up and running with Nuxt 3 & Vuetify 3";
 const image = "https://vuetify3nuxt3starter.behonbaker.com/starter.png";
 const url = "https://vuetify3nuxt3starter.behonbaker.com/";
